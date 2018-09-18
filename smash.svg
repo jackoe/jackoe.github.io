@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) by Toomai Glittershine for SmashWiki -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   height="256"
+   width="256"
+   viewBox="0 0 256 256"
+   style="zoom: 1;"
+   sodipodi:docname="smash.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <defs
+     id="defs7" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview5"
+     showgrid="false"
+     inkscape:zoom="0.921875"
+     inkscape:cx="128"
+     inkscape:cy="128"
+     inkscape:window-x="339"
+     inkscape:window-y="93"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="m 128.33899,2.17189 c -5.57314,0 -11.07224,0.3684808 -16.45442,1.0690228 V 154.85524 h 139.81609 c 1.82598,-8.54361 2.78888,-17.4039 2.78888,-26.493 0,-69.674408 -56.47242,-126.19035 -126.15055,-126.19035 z M 47.879652,31.128276 C 19.943449,54.268464 2.18842,89.2541 2.18842,128.36224 c 0,9.08367 0.9680386,17.95477 2.7888855,26.493 H 47.879652 Z M 12.972106,179.53556 c 7.958167,17.92748 19.987362,33.65544 34.907544,46.01417 v -46.01417 z m 98.912464,0 v 73.90153 c 5.38245,0.70058 10.88097,1.069 16.45441,1.069 51.4549,0 95.69233,-30.80437 115.32039,-74.97053 z"
+     id="mainsymbolpath"
+     style="fill:#002b36;stroke:none;stroke-width:1.4045763"
+     inkscape:connector-curvature="0" />
+</svg>

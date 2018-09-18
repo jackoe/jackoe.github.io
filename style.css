@@ -1,0 +1,105 @@
+.interests  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+}
+.interests > *, .interests > a > img{
+    width: 100px;
+    height: 100%;
+}
+
+
+.container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+#podcasts img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#podcasts * {
+  border-radius: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #eee8d5;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #657b83;
+  font-size: 12pt;
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* -ms-transform: translate(-50%, -50%); */
+}
+
+body  {
+    margin-right: 5% !important;
+    margin-left : 5% !important;
+}
+
+#cash-pic  {
+    visibility: visible;
+}
+
+#cash-instructions  {
+    visibility: hidden;
+    width: 200px;
+}
+
+#cash-instructions:hover  {
+    visibility: visible!important;
+}
+
+#cash-instructions > #text  {
+    position: relative;
+}
+
+#payment-methods  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 100%;
+}
+
+
+#payment-methods > a, #payment-methods > div > a, .app-icon  {
+    width:  200px;
+    height: 200px;
+    margin: 0% !important;
+}
+
+#payment-methods > a, #cash-instructions {
+    margin: 5vh !important;
+}

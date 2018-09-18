@@ -1,0 +1,28 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.13.4//EN
+N:Wines;Jack;;;
+FN:Jack Wines
+EMAIL;type=INTERNET;type=HOME:jackwines@mac.com
+EMAIL;type=INTERNET;type=HOME;type=pref:jack@winesj.com
+TEL;type=IPHONE;type=CELL;type=VOICE;type=pref:(914) 334-1695
+item1.X-ABADR:us
+X-SOCIALPROFILE;type=facebook;x-displayname=Jack Wines:https://www.facebook.com/profile.php?id=100002627931543
+X-SOCIALPROFILE;type=twitter:http://twitter.com/JLWines
+item2.URL;type=pref:winesj.com
+item2.X-ABLabel:_$!<HomePage>!$_
+item3.URL:www.cash.me/$winesj
+item3.X-ABLabel:SquareCash
+item4.URL:https://venmo.com/Jack-Wines
+item4.X-ABLabel:Venmo
+item5.URL:https://github.com/jackoe
+item5.X-ABLabel:Github
+item6.URL:https://www.dropbox.com/request/aRxwFesHRX4toEy9XPVu
+item6.X-ABLabel:Dropbox
+BDAY:1995-10-19
+X-AIM;type=HOME;type=pref:jackwines@mac.com
+IMPP;X-SERVICE-TYPE=AIM;type=HOME;type=pref:aim:jackwines@mac.com
+IMPP;X-SERVICE-TYPE=Facebook:xmpp:Jackoe95
+PHOTO;VALUE=URI;TYPE=JPEG:http://winesj.com/contactPhoto.jpg
+X-ABUID:14ED9331-F6B6-49CA-ABA9-935F1FB72ECC
+END:VCARD
