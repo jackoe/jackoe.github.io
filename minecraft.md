@@ -8,7 +8,7 @@
 The server of last year is back up; Rejoice! It will be up for the forseeable future.
 
 ### Quickstart
-* use the latest version of minecraft (1.12.)
+* use a 1-down version of minecraft (1.12.2)
 * use the ip `45.79.189.171`
 
 ### Sharing
