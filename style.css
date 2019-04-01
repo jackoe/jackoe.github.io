@@ -22,8 +22,8 @@
   margin: 10px;
 }
 
-body {
-  padding: 0 2rem;
+body and (max-width: 640px){
+  padding: 0 5%;
 }
 
 #podcasts img{
