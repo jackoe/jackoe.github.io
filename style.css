@@ -11,12 +11,19 @@
     height: 100%;
 }
 
+.nes-container {
+    color: black;
+}
 
 .container {
   position: relative;
   width: 100px;
   height: 100px;
   margin: 10px;
+}
+
+body {
+  padding: 0 2rem;
 }
 
 #podcasts img{

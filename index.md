@@ -1,18 +1,39 @@
 ---
 pagetitle: Jack Wines
 header-includes:
-    <link href="style.css"     rel="stylesheet" type="text/css">
-    <link href="solarized.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css">
 ---
-### Hi
-
-I'm Jack Wines. I just graduated from [Carleton College](http://www.carleton.edu).
-
-Some of my personal projects:
-
-<div class="interests">[![podcasts](overcast.svg "podcasts")](podcasts.html) [<svg viewBox="0 0 9 9" id="stones" alt-text="Go"><defs><pattern height="1" width="1" stroke-width="0.05" patternUnits="userSpaceOnUse" id="grid" stroke="#002b36"><rect height="1" width="1" stroke-width="0.1" fill="none" stroke="#002b36"></rect></pattern><circle r=".40" id="stone"></circle></defs><rect height="100%" width="100%" fill="#fdf6e3"></rect><g transform="translate(0.5, 0.5)" id="stoneGrid"><rect height="8" width="8" fill="url(#grid)"></rect><g id="Placed"><use x="2" xlink:href="#stone" y="2" fill="#002b36"></use><use x="2" xlink:href="#stone" y="4" fill="#002b36"></use><use x="2" xlink:href="#stone" y="6" fill="#eee8d5"></use><use x="3" xlink:href="#stone" y="4" fill="#002b36"></use><use x="3" xlink:href="#stone" y="5" fill="#eee8d5"></use><use x="4" xlink:href="#stone" y="3" fill="#002b36"></use><use x="4" xlink:href="#stone" y="4" fill="#eee8d5"></use><use x="4" xlink:href="#stone" y="6" fill="#eee8d5"></use><use x="5" xlink:href="#stone" y="3" fill="#eee8d5"></use><use x="5" xlink:href="#stone" y="5" fill="#eee8d5"></use><use x="6" xlink:href="#stone" y="2" fill="#002b36"></use><use x="6" xlink:href="#stone" y="4" fill="#eee8d5"></use><use x="6" xlink:href="#stone" y="6" fill="#eee8d5"></use></g><use x="4" xlink:href="#stone" y="2" fill="#eee8d5"></use><use x="5" xlink:href="#stone" y="2" fill="#002b36"></use><use x="6" xlink:href="#stone" y="1" fill="#eee8d5"></use><use x="5" xlink:href="#stone" y="1" fill="#002b36"></use><use x="6" xlink:href="#stone" y="0" fill="#eee8d5"></use><use x="7" xlink:href="#stone" y="2" fill="#002b36"></use><use x="7" xlink:href="#stone" y="3" fill="#eee8d5"></use><use x="8" xlink:href="#stone" y="3" fill="#002b36"></use><use x="7" xlink:href="#stone" y="4" fill="#eee8d5"></use><use x="6" xlink:href="#stone" y="3" fill="#002b36"></use><use x="7" xlink:href="#stone" y="5" fill="#eee8d5"></use><use x="8" xlink:href="#stone" y="4" fill="#002b36"></use><use x="8" xlink:href="#stone" y="5" fill="#eee8d5"></use><use x="8" xlink:href="#stone" y="6" fill="#002b36"></use><use x="6" xlink:href="#stone" y="5" fill="#eee8d5"></use></g></g></svg>](https://github.com/jackoe/GoGame)[![wiki](wikilogo.svg "wiki")](http://wiki.winesj.com)</div>
-
-Some other interests:
-
-<div class="interests"> ![haskell](haskell.svg "haskell") ![melee](smash.svg "smash bros")![news](news.svg "news")</div>
-
+Projects of note
+<a href="https://www.github.com/bgwines/image-triangles">
+<div class="nes-container with-title is-dark" href="github.com/jackoe-image-triangles">
+  <p class="title">image-triangles</p>
+A photo filter that generates thousands of progressively smaller and more opaque triangles to approximate your image.
+</div>
+</a>
+<a href="https://www.github.com/jackoe/mean-image-filter">
+<div class="nes-container with-title">
+  <p class="title">mean-image-filter</p>
+This one uses cluster recognition on a sample of 300 pixels from your image to reduce it to just a few colors.
+</div>
+</a>
+<a href="https://www.github.com/jackoe/discourse-tui">
+<div class="nes-container with-title is-dark">
+<p class="title">discourse-tui</p>
+A terminal-user-interface for discourse, an open-source discussion tool.
+</div>
+</a>
+<a href="https://www.github.com/jackoe/GoGame">
+<div class="nes-container with-title">
+<p class="title">GoGame</p>
+Uses websockets to let you play go (also known as weiji or baduk) with a friend in real-time by just sending a link.
+</div>
+</a>
+<a href="https://www.github.com/jackoe/404-repo-name-DNE">
+<div class="nes-container with-title is-dark">
+<p class="title">404-repo-name-DNE</p>
+A capstone project for the CS major. As a group, we built an attendance tracker for the Northfield Union of Youth. <span class="nes-text is-error">Since then, this project has been modified by the 2018-2019 group.</span>
+</div>
+</a>
+<a href="resume.pdf"><button type="button" class="nes-btn is-primary">resume</button></a>
