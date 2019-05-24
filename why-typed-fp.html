@@ -1,0 +1,50 @@
+<head>
+<link href="solarized.css" rel="stylesheet" type="text/css"> <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<h1 id="why-typed-fp">Why Typed FP?</h1>
+<p>I don’t like beer. It’s probably because of the bitterness. My sophomore year of college a friend comes back from a study-abroad in Germany and had learned orders of magnitude more about beer than I would ever know. It didn’t take long for the diagnosis:</p>
+<blockquote>
+<p>It’s not that you don’t like beer; you just haven’t had a <em>good</em> beer.</p>
+</blockquote>
+<p>Programming languages are kind of like beers. Some are an acquired taste. It’s not tremendously easy to articulate what you like about them.</p>
+<p>In years of evangelizing typed FP, I have a lot of trouble persuading people to give it a shot, and I suspect I’m not alone in this. Programming languages are after all, a tool. They’re a means to an end, and every minute you spend learning about your hammer is another you can’t spend building the table that’s due Thursday. We can’t afford to suck time from building the table, that’s what meetings are for.</p>
+<h3 id="is-java-lying">Is Java lying?</h3>
+<p>Consider the humble subclass. It lies… waiting, potentially armed with all sorts of crazy side effects. You don’t know if the nice-looking class your friend just lent you is the friendly class it claims to be, or a nasty subclass waiting to absolutely ruin your day with all sorts of functionality you haven’t heard of.</p>
+<p>So this a problem with OOP. The abstractions don’t really go away at compile time, and you can’t definitively point to all of the functions that will be run. This is undeniably helpful in some cases but it also seems to break the core guarantee of static typing – that you always know which function you’re calling.</p>
+<h3 id="the-curious-case-of-not-helping">The Curious Case Of Not Helping</h3>
+<p>It’s worth looking at why we like Python. To the extent that Typed FP has an antithesis, Python is it. It speaks to a raw impulse to tell the programming language to get out of your way. If, for example, Java is a bad decision at the typed/structure level, then python is a deferred decision. And we should give credit where credit is due, python largely does get out of your way. If your sick of picky compilers nipping at your heels, python probably won’t. More power to the programmer!</p>
+<p>But python is ultimately forced to make decisions. It ranges from obvious things, like their list and dictionary implementations, to facts of the language, like it’s optional OOP (OOOP?). At the end of the day, every language has to have its equivalent of a <code>struct</code>, and it has to choose how functions can operate on said <code>struct</code>.</p>
+<p>But it’s kind of a shame. Here we stand, with structures backed by half a century of math and we’ve more or less deemed it irrelevant to real world usage, whatever that means. Just because we an play fast and loose with a compiler that’s out to lunch doesn’t necessarily mean we should. Ideally, the act of programming is conversation between human and compiler, where one side writes and the other advises.</p>
+<p>In contrast, languages like Haskell will very much make you eat your vegetables. They force error-handling for many classes of errors, flat-out ban mutability, and treat IO as some terrible disease that, once introduced, should be quarantined at all costs.</p>
+<h3 id="immutability">Immutability</h3>
+<p>Well known from attempts to drag it kicking and screaming into the imperative world, immutability, the core of FP, serves to give us one very useful guarantee: programming functions are math functions. You can define domains, codomains, and ranges just as your would otherwise, and compose them like you would in math. Anything and everything and function does has to be encompassed in its return type, and any function that accepts said type will run, no exceptions. In practice you wind up defining a function for its entire domain, ruling out a class runtime errors. Furthermore, you can start thinking with confidence about how function a sockets into function b with the confidence you aren’t missing anything along the way.</p>
+<h3 id="higher-order-functions-the-obvious-abstraction">Higher-order Functions, The Obvious Abstraction</h3>
+<p>This one really cooks my noodle. I’ll readily admit that I don’t know why we don’t throw these around everywhere. As evidence, I present an interview with <code>foldl</code>, a front-line soldier in the fight against bad code.</p>
+<p>So, for the audience’s sake, who are you and what do you do?</p>
+<blockquote>
+<p>Well, my type signature is <code>Foldable t =&gt; (b -&gt; a -&gt; b) -&gt; b -&gt; t a -&gt; b</code>, but your readers might recognize me better when you substitute a list for a foldable:</p>
+</blockquote>
+<pre><code>(b -&gt; a -&gt; b) -&gt; b -&gt; [a] -&gt; b</code></pre>
+<p>How might you be used in the day to day?</p>
+<blockquote>
+<p>So I take a binary function, an initial element, and a list. I apply the binary function continuously to all items in the list to get one result. For example: <code>foldl (+) 0</code> is the sum function.</p>
+</blockquote>
+<p>Gosh, I’d normally use a for each loop to do that. What else can you do?</p>
+<blockquote>
+<p>It’s commonly assumed this is only useful for sum and product, but I can really do anything a for each loop can. for example <code>foldl cons []</code> reverses a list.</p>
+</blockquote>
+<h3 id="strong-typing">Strong Typing</h3>
+<p>In contrast to sneaky and lying subclasses, we have typeclasses. Typeclasses function like Java interfaces, but with one important exception: at compile/thinking time, the abstraction is substituted entirely. Take the <code>+</code> function:</p>
+<pre><code>Prelude&gt; :t (+)
+(+) :: Num a =&gt; a -&gt; a -&gt; a</code></pre>
+<p>This takes 2 numbers of type <code>a</code>, where <code>a</code> is a member of the typeclass <code>Num</code>. Now watch what happens when we substitute an Int for the first <code>a</code>.</p>
+<pre><code>Prelude&gt; let n = 4 :: Int
+Prelude&gt; :t (+ n)
+(+ n) :: Int -&gt; Int</code></pre>
+<p>This now takes one number, of type <code>Int</code> and returns another of type <code>Int</code>. We got the benefits of the abstraction, a function that works on all <code>Num</code>s, but <strong>we didn’t lose the specificity of a function built just for Ints</strong>. In other words, the return type is decided at compile-time as opposed to runtime. To hammer home the point, here’s the same idea applied to <code>sort</code>.</p>
+<pre><code>Prelude List&gt; :t List.sort
+List.sort :: Ord a =&gt; [a] -&gt; [a]
+Prelude List&gt; :t List.sort [1 :: Int]
+List.sort [1 :: Int] :: [Int]</code></pre>
+<h3 id="conclusion">Conclusion</h3>
+<p>We’re not doomed to have languages whose only redeeming feature is that they get in our way less. Functional programming is inherently kind of heavy, given the restrictions it places on the programmer. But in return for time invested, it offers a powerful way to think about computation that might just make our lives easier. We shouldn’t be so quick to settle, the compilers aren’t done with us yet.</p>
