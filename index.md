@@ -37,7 +37,7 @@ A capstone project for the CS major. As a group, we built an attendance tracker 
 </div>
 </a>
 <a href="https://www.github.com/jackoe/fast-bronze">
-<div class="nes-container with-title is-dark">
+<div class="nes-container with-title">
 <p class="title">fast-bronze</p>
 A clone of the mac app Quicksilver.
 </div>
